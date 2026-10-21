@@ -1,0 +1,12 @@
+# bases de dados (a licença do AVI não permite redistribuir; o BETA tem ~5 GB)
+dados/
+*.mat
+*.npy
+*.npz
+*.fif
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
