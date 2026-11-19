@@ -27,7 +27,19 @@ Cada pasta tem os mesmos cinco notebooks:
 | RFE (40) + SVM | entre participantes | 70,6% |
 | SVM só com ritmos | por bloco | 3,0% (acaso = 2,5%) |
 
-Beta e TBR não identificam o alvo e não acompanham o SSVEP dentro de cada participante. Entre participantes, mais beta e menos TBR frontal aparecem junto com um quociente BCI maior (ρ ≈ 0,2–0,3), mas esse indício fica fraco depois da correção para múltiplos testes.
+### SSVEP, beta e TBR em AVI e BETA
+
+Durante o estímulo, as duas bases apresentaram correlações fracas na mesma direção: SSVEP mais forte veio acompanhado de maior potência beta relativa e menor razão teta/beta (TBR).
+
+| Análise | SSVEP × beta relativa | SSVEP × TBR |
+|---|---:|---:|
+| [AVI](avi/05_analise_atencao.ipynb), janelas agrupadas após normalização por ensaio | +0,111 | −0,110 |
+| [BETA](beta/05_analise_atencao.ipynb), durante o estímulo, mediana por participante | +0,022 | −0,035 |
+| BETA, ritmos pré-estímulo, mediana por participante | +0,004 | +0,009 |
+
+A AVI mede o SSVEP por CCA, e a BETA usa SNR de banda estreita. Essas diferenças de métrica e agregação limitam a comparação direta dos coeficientes. Na BETA, durante o estímulo, beta e TBR também variaram com a frequência do alvo, o que é compatível com influência residual do SSVEP. As duas bases carecem de uma medida independente de atenção, portanto a interpretação é exploratória.
+
+Na BETA, entre participantes, maior beta e menor TBR nos canais frontais e centrais se associaram a um quociente BCI maior (ρ em magnitude de 0,21 a 0,31). Após a correção de Bonferroni, apenas a associação com beta durante o estímulo permaneceu estatisticamente significativa.
 
 ### Como executar
 
